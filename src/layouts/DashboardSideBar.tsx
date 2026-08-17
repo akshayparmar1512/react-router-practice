@@ -6,12 +6,20 @@ function DashboardSideBar (){
             <aside>
                 <nav>
                     <NavLink to="students"
-                    className={(isActive)=>{
-                        isActive?style.active : ""
+                    className={({isActive})=>{
+                        return isActive?style.active:""
                     }}
                     >Students</NavLink> |
-                    <NavLink to ="courses">Courses</NavLink>  |
-                    <NavLink to ="settings">Settings</NavLink>
+                    <NavLink to ="courses"
+                     className={({isActive})=>{
+                        return isActive?style.active:""
+                    }}
+                    >Courses</NavLink>  |
+                    <NavLink to ="settings"
+                     className={({isActive})=>{
+                        return isActive?style.active:""
+                    }}
+                    >Settings</NavLink>
                 </nav>
             </aside>
             <main>

@@ -7,6 +7,7 @@ import DashboardSideBar from "../layouts/DashboardSideBar";
 import Students from "../pages/Students";
 import Courses from "../pages/Courses";
 import Settings from "../pages/Settings";
+import StudentDetails from "../pages/StudentDetails";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
                         path : "students",
                         element : <Students/>
                     },
+                    {
+                        path : "students/:id",
+                        element : <StudentDetails/>
+                    },
+
                     {
                         path : "courses",
                         element : <Courses/>
