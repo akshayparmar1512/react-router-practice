@@ -19,7 +19,13 @@ function DashboardSideBar (){
                      className={({isActive})=>{
                         return isActive?style.active:""
                     }}
-                    >Settings</NavLink>
+                    >Settings</NavLink> |
+
+                    <NavLink to ="profile"
+                     className={({isActive})=>{
+                        return isActive?style.active:""
+                    }}
+                    >Profile</NavLink>
                 </nav>
             </aside>
             <main>
